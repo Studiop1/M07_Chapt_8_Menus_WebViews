@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.m07chapt8menuswebviews">
+    <!--This lab uses a WebView, to use that you need to add a tag to grant permissions
+         This is similar to your previous lab where you added a tag to allow use of the
+         Camera.
+
+         You will also add a new Activity.  You should let Android Studio do that work for you
+         but the result will be an entry in the Manifest, and a new *.kt file (Kotlin file)
+         and a new *.xml file (layout file)-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.M07Chapt8MenusWebViews">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
